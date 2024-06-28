@@ -111,7 +111,7 @@ const Signup = () => {
   useEffect(() => {
     const fetchCoordinates = () => {
       fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${numero}+${rua},+${cidade},+${cep}&key=AIzaSyD7HkFL2rkQ11MeNtyrRJZG2zpX-ddBjJs`
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${numero}+${rua},+${cidade},+${cep}&key=${apiKey}`
       )
         .then((response) => response.json())
         .then((data) => {
